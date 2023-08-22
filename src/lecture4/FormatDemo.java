@@ -1,0 +1,14 @@
+package lecture4;
+
+import java.util.Scanner;
+
+public class FormatDemo {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.printf("%-10d%-10.4f%-10.4f%-10.4f%-10.4f\n", "degrees", "radians", "sine", "cosine", "tangent");
+        int degrees = 30;
+        double radians = Math.toRadians(degrees);
+        System.out.printf("%-10d%-10.4f%-10.4f%-10.4f%-10.4f\n", degrees, radians, Math.sin(radians), Math.cos(radians), Math.tan(radians));
+    }
+}
